@@ -1,0 +1,31 @@
+.tabsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.5rem 1rem;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tabs:nth-child(1) {
+  transform: translateY(2rem);
+}
+
+.tabs:nth-child(2) {
+  background-color: #c4bfc2;
+  transform: translateY(1rem);
+}
+
+.tabs:nth-child(3) {
+  background-color: #813634;
+  /* transform: translateY(-1rem); */
+}
+
+.tabs p {
+  padding: 0 2.6rem 0 0;
+}
