@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "../styles/Home.module.css";
 import hoyLop from "../assets/lop.jpg";
 import {
@@ -10,6 +10,7 @@ import {
   GrLinkedinOption,
   GrMail,
 } from "react-icons/gr";
+import Typed from "react-typed";
 import Tabs from "../components/Tabs";
 import Featured from "../components/Featured";
 
@@ -24,10 +25,23 @@ export default function Home() {
 
       <main className={styles.main}>
         <article className={styles.left}>
-          <h1>hoy Lop!</h1>
+          <h1>
+            <Typed
+              strings={["hoy Lop!"]}
+              loop
+              typeSpeed={100}
+              backSpeed={180}
+            />
+          </h1>
           <section>
             <div className={styles.imageContainer}>
-              <Image src={hoyLop} alt="" placeholder="blur" />
+              <Image
+                src={hoyLop}
+                alt=""
+                width={562}
+                height={750}
+                layout="intrinsic"
+              />
               <h2>all about me</h2>
             </div>
           </section>

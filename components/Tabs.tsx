@@ -5,7 +5,7 @@ function Tabs() {
     <article className={styles.tabsContainer}>
       <section className={styles.tabs} style={{ zIndex: "1000" }}>
         <h2>Reels</h2>
-        <p>Catch me on Tiktok every Saturday as I make art live</p>
+        <p>Catch me on Tiktok every Saturday for more</p>
       </section>
       <section className={styles.tabs}>
         <h2>Tutorials</h2>
@@ -13,7 +13,7 @@ function Tabs() {
       </section>
       <section className={styles.tabs}>
         <h2>Top picks + recos</h2>
-        <p>Materials I stand by and would love for you to try</p>
+        <p>Materials I stand by and would love you to try</p>
       </section>
     </article>
   );
