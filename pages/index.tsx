@@ -41,6 +41,7 @@ export default function Home() {
                 width={562}
                 height={750}
                 layout="intrinsic"
+                placeholder="blur"
               />
               <h2>all about me</h2>
             </div>
