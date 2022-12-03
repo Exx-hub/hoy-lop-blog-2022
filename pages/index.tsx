@@ -1,13 +1,10 @@
 import Head from "next/head";
 import Image from "next/legacy/image";
 import styles from "../styles/Home.module.css";
-import hoyLop from "../assets/lop.jpg";
 import {
   GrInstagram,
   GrFacebookOption,
-  GrFacebook,
   GrLinkedin,
-  GrLinkedinOption,
   GrMail,
 } from "react-icons/gr";
 import Typed from "react-typed";
@@ -36,12 +33,13 @@ export default function Home() {
           <section>
             <div className={styles.imageContainer}>
               <Image
-                src={hoyLop}
+                src={"/lop.jpg"}
                 alt=""
                 width={562}
                 height={750}
                 layout="intrinsic"
                 placeholder="blur"
+                blurDataURL="/lop.jpg"
               />
               <h2>all about me</h2>
             </div>

@@ -28,7 +28,33 @@
 }
 
 .menu {
-  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobileNav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  top: 3rem;
+  right: 0.7rem;
+  z-index: 1000;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-color: white;
+  border: 1px solid lightgray;
+
+  transition: all 400ms ease;
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.mobileNav a {
+  border-bottom: 1px solid #813634;
+  padding: 4px 2px;
 }
 
 @media screen and (min-width: 768px) {
