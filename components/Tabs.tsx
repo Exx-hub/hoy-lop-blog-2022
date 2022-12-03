@@ -1,20 +1,25 @@
+import Link from "next/link";
 import styles from "../styles/Tabs.module.css";
 
 function Tabs() {
   return (
     <article className={styles.tabsContainer}>
-      <section className={styles.tabs} style={{ zIndex: "1000" }}>
-        <h2>Reels</h2>
-        <p>Catch me on Tiktok every Saturday for more</p>
-      </section>
-      <section className={styles.tabs}>
+      <Link href="/blog" className={styles.tabs} style={{ zIndex: "1000" }}>
+        <h2>Blog</h2>
+        <p>This is where I share articles about lorem ipsum.</p>
+      </Link>
+      <Link
+        href="https://www.linkedin.com/in/alvin-acosta/"
+        target="_blank"
+        className={styles.tabs}
+      >
         <h2>Tutorials</h2>
-        <p>Videos to guide and to inspire you create</p>
-      </section>
-      <section className={styles.tabs}>
+        <p>Videos to guide you and to inspire you to lorem.</p>
+      </Link>
+      <Link href="/top-picks" className={styles.tabs}>
         <h2>Top picks + recos</h2>
         <p>Materials I stand by and would love you to try</p>
-      </section>
+      </Link>
     </article>
   );
 }

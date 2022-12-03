@@ -1,0 +1,91 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.5rem;
+  /* width: 85%; */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.figCaption {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 2rem;
+  max-width: 518px;
+}
+
+.figCaption h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.3rem;
+  color: #813634;
+  font-weight: 900;
+}
+
+.figCaption p {
+  font-size: 0.9rem;
+  color: rgb(149, 149, 149);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer img {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 768px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 5px;
+  }
+
+  .figCaption {
+    height: 98%;
+    padding: 2.5rem;
+    min-width: 333.38px;
+  }
+
+  .figCaption h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #813634;
+    font-weight: 900;
+  }
+
+  .figCaption p {
+    font-size: 1rem;
+    color: rgb(149, 149, 149);
+  }
+
+  .imageContainer {
+    min-width: 333.38px;
+    margin-top: 4px;
+    padding: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .figCaption {
+    padding: 3.5rem 2.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .figCaption h3 {
+    font-size: 1.4rem;
+  }
+
+  .figCaption p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+}
