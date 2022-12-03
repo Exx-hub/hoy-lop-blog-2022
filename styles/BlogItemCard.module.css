@@ -13,13 +13,16 @@
   background-color: white;
   padding: 2rem;
   max-width: 518px;
+  box-shadow: 5px 10px 17px -7px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 
 .figCaption h3 {
   font-size: 1.2rem;
   margin-bottom: 1.3rem;
   color: #813634;
-  font-weight: 900;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900 !important;
 }
 
 .figCaption p {
@@ -79,7 +82,7 @@
 }
 @media screen and (min-width: 1200px) {
   .figCaption h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .figCaption p {

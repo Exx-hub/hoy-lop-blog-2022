@@ -6,7 +6,7 @@ function Tabs() {
     <article className={styles.tabsContainer}>
       <Link href="/blog" className={styles.tabs} style={{ zIndex: "1000" }}>
         <h2>Blog</h2>
-        <p>This is where I share articles about lorem ipsum.</p>
+        <p>This is where I share articles about lorem .</p>
       </Link>
       <Link
         href="https://www.linkedin.com/in/alvin-acosta/"

@@ -1,30 +1,24 @@
 import BlogItemCard from "./BlogItemCard";
-import coding from "../assets/coding.jpg";
-import nature from "../assets/nature.jpg";
-import bargains from "../assets/bargains.jpg";
 
 import styles from "../styles/BlogList.module.css";
+import { Blog } from "../interfaces/interfaces";
 
-function BlogList() {
+interface BlogListProps {
+  blogs: Blog[];
+}
+
+function BlogList({ blogs }: BlogListProps) {
   return (
     <div className={styles.blogListContainer}>
-      <BlogItemCard
-        title=" I Started My Own Simple Website For Only P5,000, And You Could Too!"
-        subtitle="subtitle about the blog post - sit amet consectetur adipisicing elit."
-        src={coding}
-      />
-
-      {/* <BlogItemCard
-        title=" I Started My Own Simple Website For Only P5,000, And You Could Too!"
-        subtitle="subtitle about the blog post - sit amet consectetur adipisicing elit."
-        src={nature}
-      />*/}
-
-      <BlogItemCard
-        title=" I Started My Own Simple Website For Only P5,000, And You Could Too!"
-        subtitle="subtitle about the blog post - sit amet consectetur adipisicing elit."
-        src={bargains}
-      />
+      {blogs.map((blog) => (
+        <BlogItemCard
+          title={blog.title}
+          subtitle={blog.subtitle}
+          image={blog.image}
+          key={blog.id}
+          slug={blog.slug}
+        />
+      ))}
     </div>
   );
 }

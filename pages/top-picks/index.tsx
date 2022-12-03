@@ -6,7 +6,7 @@ function TopPicks() {
   return (
     <div className="container blog-page">
       <SubNavigation title="Top Picks + Recos" />
-      <BlogList />
+      {/* <BlogList /> */}
     </div>
   );
 }
