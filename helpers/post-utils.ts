@@ -54,6 +54,8 @@ export function getAllBlogs() {
   return allBlogsArray;
 }
 
-// export function getTopPicks(){
+export function getTopPicks() {
+  const allBlogs = getAllBlogs();
 
-// }
+  return allBlogs.filter((blog) => blog.isTopPick);
+}

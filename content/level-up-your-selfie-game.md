@@ -3,7 +3,7 @@ title: "Selfie Studio: Level Up Your Selfie Game"
 date: "2022-11-30"
 image: "mirror-studios.jpg"
 subtitle: One of a kind studio..Mirror Studios lorem ipsum dolor.
-isTopPick: true
+isTopPick: false
 isBargain: true
 isNature: false
 isBeauty: false

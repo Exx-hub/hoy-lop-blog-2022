@@ -1,10 +1,7 @@
-import React from "react";
 import BlogList from "../../components/BlogList";
-import SubNavigation from "../../components/SubNavigation";
 import { Blog } from "../../interfaces";
 
 import { getAllBlogs } from "../../helpers/post-utils";
-import Socials from "../../components/Socials";
 import SubLayout from "../../components/layout/SubLayout";
 
 interface BlogProps {

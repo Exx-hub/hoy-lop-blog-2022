@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import Socials from "../Socials";
 import SubNavigation from "../SubNavigation";
 

@@ -1,10 +1,7 @@
 import { GetStaticProps } from "next";
-import Image from "next/image";
-
 import ReactMarkdown from "react-markdown";
 import SubLayout from "../../components/layout/SubLayout";
-import Socials from "../../components/Socials";
-import SubNavigation from "../../components/SubNavigation";
+
 import { convertToDate } from "../../helpers/date-convert";
 import { createBlogData, getFiles } from "../../helpers/post-utils";
 import { Blog, FixMeLater } from "../../interfaces";

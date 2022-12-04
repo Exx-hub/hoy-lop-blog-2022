@@ -1,9 +1,7 @@
-import React from "react";
 import BlogList from "../../components/BlogList";
 import SubLayout from "../../components/layout/SubLayout";
-import Socials from "../../components/Socials";
-import SubNavigation from "../../components/SubNavigation";
-import { getAllBlogs } from "../../helpers/post-utils";
+
+import { getAllBlogs, getTopPicks } from "../../helpers/post-utils";
 import { Blog } from "../../interfaces";
 
 interface TopPicksProps {
@@ -21,11 +19,11 @@ function TopPicks({ blogs }: TopPicksProps) {
 export default TopPicks;
 
 export const getStaticProps = () => {
-  const blogs = getAllBlogs();
+  const topPicks = getTopPicks();
 
   return {
     props: {
-      blogs,
+      blogs: topPicks,
     },
   };
 };
