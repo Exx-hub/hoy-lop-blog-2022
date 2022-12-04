@@ -1,6 +1,6 @@
 ---
 title: 7 New Date Ideas You Must Try
-date: "2022-12-03"
+date: "2022-12-01"
 image: "date-ideas.jpg"
 subtitle: Partner up for an adventure in the city! · Get on the roadside coffee shop trend · Revisit the past on a historical escapade · Try gallery-hopping.
 isTopPick: true
@@ -10,7 +10,7 @@ isBeauty: false
 id: 3
 ---
 
-## 7 New Date Ideas You Must Try
+## Blog Headline here
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum

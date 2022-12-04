@@ -1,7 +1,7 @@
 import BlogItemCard from "./BlogItemCard";
 
 import styles from "../styles/BlogList.module.css";
-import { Blog } from "../interfaces/interfaces";
+import { Blog } from "../interfaces";
 
 interface BlogListProps {
   blogs: Blog[];

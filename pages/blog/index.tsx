@@ -1,9 +1,11 @@
 import React from "react";
 import BlogList from "../../components/BlogList";
 import SubNavigation from "../../components/SubNavigation";
-import { Blog } from "../../interfaces/interfaces";
+import { Blog } from "../../interfaces";
 
 import { getAllBlogs } from "../../helpers/post-utils";
+import Socials from "../../components/Socials";
+import SubLayout from "../../components/layout/SubLayout";
 
 interface BlogProps {
   blogs: Blog[];
@@ -12,10 +14,9 @@ interface BlogProps {
 function Blog(props: BlogProps) {
   // console.log(props);
   return (
-    <div className="container blog-page">
-      <SubNavigation title="Blog" />
+    <SubLayout title="Blog">
       <BlogList blogs={props.blogs} />
-    </div>
+    </SubLayout>
   );
 }
 

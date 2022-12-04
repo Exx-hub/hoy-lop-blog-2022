@@ -1,15 +1,10 @@
 import Head from "next/head";
 import Image from "next/legacy/image";
 import styles from "../styles/Home.module.css";
-import {
-  GrInstagram,
-  GrFacebookOption,
-  GrLinkedin,
-  GrMail,
-} from "react-icons/gr";
 import Typed from "react-typed";
 import Tabs from "../components/Tabs";
 import Featured from "../components/Featured";
+import Socials from "../components/Socials";
 
 export default function Home() {
   return (
@@ -46,12 +41,7 @@ export default function Home() {
           </section>
         </article>
         <article className={styles.right}>
-          <section className={styles.socials}>
-            <GrInstagram className={styles.icon} />
-            <GrFacebookOption className={styles.icon} />
-            <GrLinkedin className={styles.icon} />
-            <GrMail className={styles.icon} />
-          </section>
+          <Socials isFooter={false} />
 
           <Tabs />
 

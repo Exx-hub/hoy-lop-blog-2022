@@ -40,9 +40,10 @@
   right: 0.7rem;
   z-index: 1000;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 800;
   background-color: white;
   border: 1px solid lightgray;
+  border-radius: 3px;
 
   transition: all 400ms ease;
   opacity: 1;

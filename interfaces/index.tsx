@@ -9,5 +9,7 @@ export interface Blog {
   isBargain: boolean;
   isNature: boolean;
   isBeauty: boolean;
-  content: boolean;
+  content: string;
 }
+
+export type FixMeLater = any;

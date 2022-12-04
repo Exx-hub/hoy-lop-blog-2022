@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -43,9 +45,15 @@ export function getAllBlogs() {
   const files = getFiles();
 
   // map through filenames read from content, then pass each file to createBlogData function
-  const allBlogsArray = files.map((file) => {
-    return createBlogData(file);
-  });
+  const allBlogsArray = files
+    .map((file) => {
+      return createBlogData(file);
+    })
+    .sort((a, b) => (a.date > b.date ? -1 : 1));
 
   return allBlogsArray;
 }
+
+// export function getTopPicks(){
+
+// }

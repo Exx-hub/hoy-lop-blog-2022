@@ -1,0 +1,13 @@
+.footer {
+  text-align: center;
+  color: rgb(72, 72, 72);
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+  }
+}

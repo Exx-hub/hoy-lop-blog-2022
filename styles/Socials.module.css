@@ -1,0 +1,40 @@
+.icon {
+  color: #813634;
+  font-size: 1.4rem;
+  transition: transform 300ms;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+  width: 60%;
+  max-width: 250px;
+  margin: 0 auto;
+  transform: translateY(1.5rem);
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .socials {
+    padding: 0.5rem;
+
+    transform: translateY(1.3rem);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .socials {
+    padding: 1rem;
+    max-width: 300px;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+}
