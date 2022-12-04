@@ -1,5 +1,5 @@
 import Image from "next/legacy/image";
-import { useRouter } from "next/router";
+import Link from "next/link";
 import styles from "../styles/BlogItemCard.module.css";
 
 interface BlogItemCardProps {
@@ -10,22 +10,17 @@ interface BlogItemCardProps {
 }
 
 function BlogItemCard(props: BlogItemCardProps) {
-  const router = useRouter();
-
   const imagePath = `/blogImages/${props.slug}/${props.image}`;
 
   return (
     <figure className={styles.cardContainer}>
-      <figcaption
-        className={styles.figCaption}
-        onClick={() => router.push(`/blog/${props.slug}`)}
-      >
-        <h3>{props.title}</h3>
-        <p>{props.subtitle}</p>
-      </figcaption>
-      <div className={styles.imageContainer}>
+      <Link href={`/blog/${props.slug}`}>
         <Image src={imagePath} width={518} height={345} />
-      </div>
+        <figcaption className={styles.textDiv}>
+          <h3>{props.title}</h3>
+          <p>{props.subtitle}</p>
+        </figcaption>
+      </Link>
     </figure>
   );
 }

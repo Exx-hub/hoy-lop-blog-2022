@@ -1,93 +1,40 @@
 .cardContainer {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 0.5rem;
-  /* width: 85%; */
-  margin: 0 auto;
-  padding: 1rem;
-}
+  width: 330px;
+  font-size: 0;
+  border-radius: 7px;
 
-.figCaption {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  padding: 2rem;
-  max-width: 518px;
+  overflow: hidden;
   box-shadow: 5px 10px 17px -7px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
 }
 
-.figCaption h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1.3rem;
+.textDiv {
+  background-color: white;
   color: #813634;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 900 !important;
+  text-align: center;
+  padding: 1.4rem;
+  height: 8.75rem;
 }
 
-.figCaption p {
-  font-size: 0.9rem;
-  color: rgb(149, 149, 149);
+.textDiv h3 {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
 }
 
-.imageContainer {
-  width: 100%;
-  height: 100%;
-}
-
-.imageContainer img {
-  width: 100% !important;
+.textDiv p {
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+  color: #333;
 }
 
 @media screen and (min-width: 768px) {
-  .cardContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    align-items: center;
-    gap: 2rem;
-
-    padding: 5px;
-  }
-
-  .figCaption {
-    height: 98%;
-    padding: 2.5rem;
-    min-width: 333.38px;
-  }
-
-  .figCaption h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
-    color: #813634;
-    font-weight: 900;
-  }
-
-  .figCaption p {
-    font-size: 1rem;
-    color: rgb(149, 149, 149);
-  }
-
-  .imageContainer {
-    min-width: 333.38px;
-    margin-top: 4px;
-    padding: 0 !important;
-  }
 }
 
 @media screen and (min-width: 1024px) {
-  .figCaption {
-    padding: 3.5rem 2.5rem;
+  .textDiv h3 {
+    font-size: 1.1rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .figCaption h3 {
-    font-size: 1.5rem;
-  }
-
-  .figCaption p {
-    font-size: 1.1rem;
-  }
 }
 
 @media screen and (min-width: 1500px) {

@@ -2,7 +2,7 @@
 title: I Started My Own Simple Website For Only ₱5000, And You Could Too!
 date: "2022-12-04"
 image: "acosta-codes.jpg"
-subtitle: Started My Own Website And You Can Too!
+subtitle: Started My Own Website And You Can Too! Create your personal brand and online presence.
 isTopPick: true
 isBargain: true
 isNature: false
