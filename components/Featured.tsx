@@ -7,11 +7,11 @@ import nature1 from "../assets/nature1.jpg";
 
 function Featured() {
   return (
-    <article className={styles.cardsGrid}>
+    <section className={styles.cardsGrid}>
       <FeaturedCard img={bargains} title="bargains" />
       <FeaturedCard img={nature1} title="nature" />
       <FeaturedCard img={beauty} title="beauty" />
-    </article>
+    </section>
   );
 }
 

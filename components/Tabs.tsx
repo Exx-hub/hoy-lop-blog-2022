@@ -3,7 +3,7 @@ import styles from "../styles/Tabs.module.css";
 
 function Tabs() {
   return (
-    <article className={styles.tabsContainer}>
+    <section className={styles.tabsContainer}>
       <Link href="/blog" className={styles.tabs} style={{ zIndex: "1000" }}>
         <h2>Blog</h2>
         <p>This is where I share articles about lorem .</p>
@@ -20,7 +20,7 @@ function Tabs() {
         <h2>Top picks + recos</h2>
         <p>Materials I stand by and would love you to try</p>
       </Link>
-    </article>
+    </section>
   );
 }
 

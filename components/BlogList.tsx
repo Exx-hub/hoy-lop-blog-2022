@@ -9,7 +9,7 @@ interface BlogListProps {
 
 function BlogList({ blogs }: BlogListProps) {
   return (
-    <div className={styles.blogListContainer}>
+    <section className={styles.blogListContainer}>
       {blogs.map((blog) => (
         <BlogItemCard
           title={blog.title}
@@ -19,7 +19,7 @@ function BlogList({ blogs }: BlogListProps) {
           slug={blog.slug}
         />
       ))}
-    </div>
+    </section>
   );
 }
 

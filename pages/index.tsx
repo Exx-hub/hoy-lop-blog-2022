@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <article className={styles.left}>
+        <section className={styles.left}>
           <h1>
             <Typed
               strings={["hoy Lop!"]}
@@ -25,8 +25,8 @@ export default function Home() {
               backSpeed={180}
             />
           </h1>
-          <section>
-            <div className={styles.imageContainer}>
+          <figure>
+            <section className={styles.imageContainer}>
               <Image
                 src={"/lop.jpg"}
                 alt=""
@@ -37,16 +37,16 @@ export default function Home() {
                 blurDataURL="/lop.jpg"
               />
               <h2>all about me</h2>
-            </div>
-          </section>
-        </article>
-        <article className={styles.right}>
+            </section>
+          </figure>
+        </section>
+        <section className={styles.right}>
           <Socials isFooter={false} />
 
           <Tabs />
 
           <Featured />
-        </article>
+        </section>
       </main>
     </div>
   );
