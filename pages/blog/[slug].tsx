@@ -26,7 +26,7 @@ function BlogPage({ blog }: BlogProps) {
       <section className={styles.blogPostMain}>
         <section className={styles.blogPostHeader}>
           <p>{readableDate}</p>
-          <h2>{blog.title}</h2>
+          <h1>{blog.title}</h1>
         </section>
         <section className={styles.blogPostBody}>
           <ReactMarkdown components={customRenderers}>
