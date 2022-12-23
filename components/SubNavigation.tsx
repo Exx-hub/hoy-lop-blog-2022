@@ -14,7 +14,7 @@ function SubNavigation({ title }: SubNavigationProps) {
       <h3 className={styles.title}>{title}</h3>
 
       <nav className={styles.nav}>
-        <Link href="/">HOY LOP</Link>
+        <Link href="/">HOY LOP!</Link>
         <Link href="/blog">BLOG</Link>
         <Link href="/top-picks">TOP PICKS + RECOS</Link>
       </nav>
@@ -40,7 +40,7 @@ function SubNavigation({ title }: SubNavigationProps) {
             : `${styles.mobileNav} ${styles.hidden}`
         }
       >
-        <Link href="/">HOY LOP</Link>
+        <Link href="/">HOY LOP!</Link>
         <Link href="/blog">BLOG</Link>
         <Link href="/top-picks">TOP PICKS + RECOS</Link>
       </nav>

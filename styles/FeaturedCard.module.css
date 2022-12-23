@@ -3,6 +3,7 @@
 }
 .imageContainer {
   width: 250px;
+  height: 280px;
   margin: 0 auto;
   border-radius: 1rem;
   overflow: hidden;
@@ -12,30 +13,35 @@
   width: 100%;
   border-radius: 1rem;
   transition: transform 900ms;
-  height: 200px;
-  transform: scale(1.2);
-}
-
-.image:hover {
-  transform: scale(1.4);
+  object-fit: contain;
+  transform: translateY(-90px);
 }
 
 @media screen and (min-width: 768px) {
   .imageContainer {
     width: 200px;
-  }
-  .image {
     height: 200px;
   }
+  .image {
+    transform: translateY(-130px);
+  }
+  .image:hover {
+    transform: scale(1.17) translateY(-115px);
+  }
 }
-/* @media screen and (min-width: 1024px) {
-} */
+
 @media screen and (min-width: 1200px) {
   .imageContainer {
-    width: 175px;
+    width: 185px;
+    height: 175px;
   }
   .image {
-    height: 180px;
-    transform: scale(1.5);
+    width: 100%;
+    object-fit: contain;
+    transform: scale(1.1) translateY(-110px);
+  }
+
+  .image:hover {
+    transform: scale(1.17) translateY(-115px);
   }
 }

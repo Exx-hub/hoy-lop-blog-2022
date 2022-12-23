@@ -73,7 +73,8 @@
     font-weight: 800;
   }
 
-  .menu {
+  .menu,
+  .mobileNav {
     display: none;
   }
 }
