@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:image"
           content="https://i.ibb.co/9rjNtRV/hoylop.png"
         />
-        {/* <link rel="icon" href="/alv.ico" /> */}
+        <link rel="icon" href="/hoylopfavicon.ico" />
       </Head>
       <Component {...pageProps} />
     </>
