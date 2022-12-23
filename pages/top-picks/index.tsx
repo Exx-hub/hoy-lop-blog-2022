@@ -1,4 +1,6 @@
+import Head from "next/head";
 import BlogList from "../../components/BlogList";
+import CustomHeadTags from "../../components/CustomHeadTags";
 import SubLayout from "../../components/layout/SubLayout";
 
 import { getAllBlogs, getTopPicks } from "../../helpers/post-utils";
@@ -10,9 +12,15 @@ interface TopPicksProps {
 
 function TopPicks({ blogs }: TopPicksProps) {
   return (
-    <SubLayout title="Top Picks + Recos">
-      <BlogList blogs={blogs} />
-    </SubLayout>
+    <>
+      <CustomHeadTags
+        title="Top Picks + Recos"
+        description="Collection of featured and favorite blog posts"
+      />
+      <SubLayout title="Top Picks + Recos">
+        <BlogList blogs={blogs} />
+      </SubLayout>
+    </>
   );
 }
 

@@ -1,5 +1,7 @@
 import { GetStaticProps } from "next";
+import Head from "next/head";
 import ReactMarkdown from "react-markdown";
+import CustomHeadTags from "../../components/CustomHeadTags";
 import SubLayout from "../../components/layout/SubLayout";
 
 import { convertToDate } from "../../helpers/date-convert";
@@ -22,19 +24,22 @@ function BlogPage({ blog }: BlogProps) {
   };
 
   return (
-    <SubLayout title="hoy Lop!">
-      <section className={styles.blogPostMain}>
-        <section className={styles.blogPostHeader}>
-          <p>{readableDate}</p>
-          <h1>{blog.title}</h1>
+    <>
+      <CustomHeadTags title={blog.title} description={blog.title} />
+      <SubLayout title="hoy Lop!">
+        <section className={styles.blogPostMain}>
+          <section className={styles.blogPostHeader}>
+            <p>{readableDate}</p>
+            <h1>{blog.title}</h1>
+          </section>
+          <section className={styles.blogPostBody}>
+            <ReactMarkdown components={customRenderers}>
+              {blog.content}
+            </ReactMarkdown>
+          </section>
         </section>
-        <section className={styles.blogPostBody}>
-          <ReactMarkdown components={customRenderers}>
-            {blog.content}
-          </ReactMarkdown>
-        </section>
-      </section>
-    </SubLayout>
+      </SubLayout>
+    </>
   );
 }
 

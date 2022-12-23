@@ -3,17 +3,21 @@ import { Blog } from "../../interfaces";
 
 import { getAllBlogs } from "../../helpers/post-utils";
 import SubLayout from "../../components/layout/SubLayout";
+import Head from "next/head";
+import CustomHeadTags from "../../components/CustomHeadTags";
 
 interface BlogProps {
   blogs: Blog[];
 }
 
 function Blog(props: BlogProps) {
-  // console.log(props);
   return (
-    <SubLayout title="Blog">
-      <BlogList blogs={props.blogs} />
-    </SubLayout>
+    <>
+      <CustomHeadTags title="Blog" description="Showcase of my personal work" />
+      <SubLayout title="Blog">
+        <BlogList blogs={props.blogs} />
+      </SubLayout>
+    </>
   );
 }
 

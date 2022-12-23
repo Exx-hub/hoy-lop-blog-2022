@@ -9,7 +9,7 @@ function Tabs() {
         <p>This is where I share articles about lorem .</p>
       </Link>
       <Link
-        href="https://www.linkedin.com/in/alvin-acosta/"
+        href="https://www.youtube.com/@eatpraylove6663"
         target="_blank"
         className={styles.tabs}
       >
