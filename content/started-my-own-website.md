@@ -52,7 +52,7 @@ In the end I wasted Time, Energy and Money for nothing.
 
 If it’s not your forte, just give the task to someone else who lives and breathes website creation…. or whatever it is you want to achieve.
 
-If only I had known of [acosta.codes](https://www.linkedin.com/in/alvin-acosta/) who can make the website of my dreams come to life...but alas...
+If only I had known of [acosta.codes](https://www.acosta.codes) (view his personal portfolio) who can make the website of my dreams come to life...but alas...
 
 ## All Hope Is Not Lost
 
@@ -78,7 +78,7 @@ In terms of design, layout and content…
 that can also deliver the results you are aiming for…
 at a very affordable and below industry price of P5,000?
 If you’re answer is Yes,
-click [HERE](https://www.linkedin.com/in/alvin-acosta/) now!
+click [HERE](https://www.linkedin.com/in/alvin-acosta/) to get in touch through his linkedIn account now!
 
 # space
 
