@@ -15,7 +15,13 @@ function BlogItemCard(props: BlogItemCardProps) {
   return (
     <figure className={styles.cardContainer}>
       <Link href={`/blog/${props.slug}`}>
-        <Image src={imagePath} width={518} height={345} />
+        <Image
+          src={imagePath}
+          width={518}
+          height={345}
+          placeholder="blur"
+          blurDataURL={imagePath}
+        />
         <figcaption className={styles.textDiv}>
           <h3>{props.title}</h3>
           <p>{props.subtitle}</p>

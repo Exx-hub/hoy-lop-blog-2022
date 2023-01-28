@@ -6,7 +6,7 @@ function Tabs() {
     <section className={styles.tabsContainer}>
       <Link href="/blog" className={styles.tabs} style={{ zIndex: "1000" }}>
         <h2>Blog</h2>
-        <p>Writing about life. My travels, nature and beauty.</p>
+        <p>About life, my travels, nature and beauty.</p>
       </Link>
       <Link
         href="https://www.youtube.com/@eatpraylove6663"
@@ -18,7 +18,7 @@ function Tabs() {
       </Link>
       <Link href="/top-picks" className={styles.tabs}>
         <h2>Top picks + recos</h2>
-        <p>Materials I stand by and would love you to try</p>
+        <p>Materials I stand by and would love you to try.</p>
       </Link>
     </section>
   );

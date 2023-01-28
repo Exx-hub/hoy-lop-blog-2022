@@ -1,15 +1,22 @@
 .blogListContainer {
   display: flex;
-  gap: 30px;
+  flex-direction: column;
   min-width: 280px;
-  flex-wrap: wrap;
+
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .blogListContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1500px) {
   .blogListContainer {
     max-width: 80%;
-    gap: 50px;
   }
 }

@@ -1,10 +1,11 @@
 .cardContainer {
-  width: 330px;
+  width: 260px;
   font-size: 0;
   border-radius: 7px;
 
   overflow: hidden;
   box-shadow: 5px 10px 17px -7px rgba(0, 0, 0, 0.75);
+  margin-bottom: 2rem;
 }
 
 .textDiv {
@@ -12,7 +13,7 @@
   color: #813634;
   text-align: center;
   padding: 1.4rem;
-  height: 8.75rem;
+  height: 10rem;
 }
 
 .textDiv h3 {
@@ -27,6 +28,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .cardContainer {
+    margin: 1rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -38,4 +42,7 @@
 }
 
 @media screen and (min-width: 1500px) {
+  .cardContainer {
+    width: 330px;
+  }
 }

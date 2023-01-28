@@ -1,5 +1,6 @@
 .cardContainer {
   text-align: center;
+  margin: 0.5rem 0;
 }
 .imageContainer {
   width: 250px;
@@ -31,6 +32,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .cardContainer {
+    margin: 0 0.5rem;
+  }
   .imageContainer {
     width: 185px;
     height: 175px;
